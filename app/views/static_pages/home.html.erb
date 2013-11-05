@@ -1,0 +1,29 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="span8">
+      <h3>Micropost Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1>Welcome to the Hackathon Blog</h1>
+
+    <h2>
+      Tule oma mene jai mika. Lie eli hyvastinsa nae mennessaan polvilleen saappaille sai tarkoittaa lintukarit. Kastettua maistuisi kaakkyroi hiljainen ne ei he. Emanta siella jos talvet pakota niilla kertoi ole. On en olisi et totta pthyi puhut. Jalasta hymahti vai kuulkaa viereen ela ehdotan ero. Toista ulapan se on velkaa et. Me no jumala seinaa ja miksen hiukan. Te jokainen herrakin jokainen housunsa venhekin ja porstuan. 
+      <br/><br/>
+      Tai vanhakin lypsaisi tuo jostakin. Hartioilla en se ei mennessaan ai pysahtyvan sisimpansa vastapaata. Loydetty et kerralla poydalla jo kirkolla antaapas. Pannaan konsuli puskisi te ehdotan en on. Uteliaina annettava tyrskahti he ja. Vieraankin minullekin kerrallaan en et suurtakaan kaupunkien on on. He penkille kurkkuun vierasta takaisin on. 
+    </h2>
+
+    <%= link_to "Sign up now!", signup_path,
+                                class: "btn btn-large btn-primary" %>
+  </div>
+<% end %>
