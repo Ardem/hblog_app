@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Hblog::Application.load_tasks
+HBlog::Application.load_tasks
